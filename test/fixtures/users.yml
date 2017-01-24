@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orders: MyString
+  trouble_tickets: MyString
+  logs: MyString
+
+two:
+  orders: MyString
+  trouble_tickets: MyString
+  logs: MyString

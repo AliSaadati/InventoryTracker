@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICE TRACK | <%= @page_title %></title>
+</head>
+<body>
+  <div id="header">
+    <h1>ICE TRACK Systems</h1>
+  </div>
+  <div id="main">
+    <% if !flash[:notice].blank? %>
+    <div class="notice">
+      <%= flash[:notice] %>
+    </div>
+    <% end %>
+    <div id="content">
+      <%= yield %>
+    </div>
+  </div>
+  <div id="footer">
+    <p id="copyright">&copy; Team Pho Kit Inc.</p>
+  </div>
+</body>
+</html>

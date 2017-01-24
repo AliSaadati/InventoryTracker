@@ -1,0 +1,16 @@
+<% @page_title = "Log In" %>
+<div class="Log_In_Form">
+	<h2>Log-In</h2>
+	<%= form_for(:user, :url => {:action => 'verify'}) do |f| %>
+	<tr>
+		<th>Username</th>
+		<td><%= f.text_field(:username) %></td>
+	</tr>
+	<tr>
+		<th>Password</th>
+		<td><%= f.text_field (:password) %></td>
+	</tr>
+	<!-- Log In Button -->
+	<%= submit_tag("Log-In") %>
+	<% end %>
+</div>

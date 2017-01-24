@@ -1,0 +1,11 @@
+<% @page_title = "Main Directory" %>
+	<h1>Sections</h1>
+	<%= form_for(:order, :url => {:action => 'order_entry#index'}) do |f| %>
+		<%= submit_tag("Order Entries") %>
+		<% end %>
+	<%= form_for(:customer, :url => {:action => 'shipment_tracking#index'}) do |f| %>
+		<%= submit_tag("Shipment Tracking") %>
+		<% end %>
+	<%= form_for(:product, :url => {:action => 'inventory_management/index'}) do |f| %>
+		<%= submit_tag("Inventory Management") %>
+		<% end %>
